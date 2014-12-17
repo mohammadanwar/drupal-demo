@@ -1,4 +1,0 @@
-name = EMAP World Buildings Directory Sitemap
-description = This module will create a sitemap page for World Buildings Directory.
-package = Sitemap
-core = "7.x"
