@@ -1,0 +1,40 @@
+<?php
+
+function custom_sitemap_render_menu ($menu) {
+    $output = "<ul>";
+    foreach ($menu as $item) {
+	$link = $item["link"];
+	if ($link["hidden"]) {
+	    continue;
+	}
+	if ( $link["href"] != 'sitemap' ) {
+	$output .= "<li><a href=\"" . check_url(url($link["href"], $link["options"])) . "\">" . $link["title"] . "</a></li>";
+	}
+	if ($item["below"]) {
+	    $output .= sitemap_render_menu($item["below"]);
+	}
+    }
+	$output .= "<li><a href=\"/sitemap/projects\">Projects</a></li>";
+    $output .= "</ul>";
+    return $output;
+}
+
+function custom_sitemap_content () {
+    $output = "<span id=\"sitemap\">";
+    $output .= custom_sitemap_render_menu(menu_tree_all_data("menu-footer-menu"));
+    $output .= "</span>";
+    return $output;
+}
+
+
+function custom_sitemap_menu () {
+    $items = array();
+
+    $items["sitemap"] = array (
+	    "title" => "Sitemap",
+	    "page callback" => "custom_sitemap_content",
+	    "access arguments" => array("access content"),
+	    "type" => MENU_CALLBACK);
+
+    return $items;
+}

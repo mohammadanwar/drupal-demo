@@ -1,0 +1,4 @@
+name = Custom Sitemap
+description = This module will create a custom sitemap page.
+package = Sitemap
+core = "7.x"

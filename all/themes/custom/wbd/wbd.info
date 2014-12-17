@@ -1,0 +1,22 @@
+name = World Buildings Directory
+description = A simple one-column, tableless, fluid width administration theme.
+package = Core
+version = VERSION
+core = 7.x
+stylesheets[screen][] = demo.css
+stylesheets[screen][] = unsemantic-grid-responsive.css
+stylesheets[screen][] = global.css
+stylesheets[screen][] = form.css
+
+regions[content] = Content
+regions[help] = Help
+regions[header] = Header
+regions[footer] = Footer
+regions[sidebar] = First sidebar
+
+
+; Information added by Drupal.org packaging script on 2014-05-08
+version = "7.28"
+project = "drupal"
+datestamp = "1399522731"
+
