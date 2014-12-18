@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * This the main module file.
+ */
+
+function custom_alter_node_access($node, $op, $account) {
+  $deny_for = array('project');
+    if (in_array($node->type, $deny_for) && user_is_anonymous()) {	
+      return NODE_ACCESS_DENY;
+    }
+}

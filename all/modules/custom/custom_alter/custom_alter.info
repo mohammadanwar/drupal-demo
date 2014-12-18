@@ -1,0 +1,8 @@
+name = Custom alters for WBD
+description = Custom alters for WBD
+package = WBD
+core = 7.x
+version = "7.x-1.0"
+core = "7.x"
+project = "custom_alter"
+datestamp = "1405042428"
