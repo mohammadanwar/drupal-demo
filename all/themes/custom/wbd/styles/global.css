@@ -166,7 +166,7 @@ h4 {
 
 a {
 	text-decoration: none;
-	color: #f80;	/*border-bottom: 1px dotted #ccc;*/
+	color: #e2007a;	/*border-bottom: 1px dotted #ccc;*/
 }
 
 a:hover {
@@ -1146,20 +1146,20 @@ label.forid {
 
 /* footer */
 
-#footer {
+#footer1 {
 	clear: both;
 	width: 960px;
 	margin: 0 auto 20px auto;
 	padding: 35px 0 0 0;
 }
 
-#footer ul {
-	margin: 0 0 0 320px;
+#footer1 ul {
+	margin: 0 0 0 0px;
 	padding: 0;
 	list-style: none;
 }
 
-#footer li {
+#footer1 li {
 	float: left;
 	font-size: 0.95em;
 	margin: 0 10px 0 0;
@@ -1168,7 +1168,7 @@ label.forid {
 	color: #ccc;
 }
 
-#footer li a {
+#footer1 li a {
 	font-size: 1em;
 	margin: 0 10px 0 0;
 	padding: 0;
@@ -1176,19 +1176,20 @@ label.forid {
 	border-bottom: none;
 }
 
-#footer a {
+#footer1 a {
 	font-size: 1em;
 	color: #000;
 }
 
-#footer li a:hover {
+#footer1 li a:hover {
 	background: none;
 	border-bottom: 1px solid #ccc;
 }
 
-#footer p {
-	margin: 0 0 15px 320px;
+#footer1 #block-bean-copyright-block h2 {
+	margin: 0 0 15px 0px;
 	padding: 2px 0 0 0;
 	font-size: 0.9em;
 	color: #999;
 }
+#block-bean-copyright-block{clear:both;float:left}

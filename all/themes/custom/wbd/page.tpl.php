@@ -1,7 +1,7 @@
 <div class="grid-container">
   <div class="grid-40">
-    <a href="./World Buildings Directory - Home_files/World Buildings Directory - Home.html" class="nobg" title="">
-	<img src="./World Buildings Directory - Home_files/logo_wbd.gif" alt="Go to World Buildings Directory homepage" class="main">
+    <a href="<?php print $base_path;?>" class="nobg" title="">
+	<img src="<?php print $base_path.path_to_theme()?>/images/logo_wbd.gif" alt="Go to World Buildings Directory homepage" class="main">
 	</a>
 	<?php print render($page['sidebar'])?>
   </div>
@@ -10,9 +10,12 @@
 	<?php print $breadcrumb; ?>
 	  <div class="grid-100 mobile-grid-100">
 	  <?php if ($title): ?>
+	   <div class="clearfix"><?php print $title; ?></div>
+	   <?php endif; ?>
 	  <?php if ($messages): ?>
         <div class="clearfix"><?php print $messages; ?></div>
       <?php endif; ?>
+	 
       <?php if ($page['help']): ?>
         <div id="help">
           <?php print render($page['help']); ?>
@@ -23,9 +26,7 @@
 	  </div>		
 	</div>	
 	<div id="footer1">
-  <?php print render($page['footer']);?>
-  <br clear="all">
-  <p>© 2008 - 2014 World Buildings Directory. All rights reserved. Site by <a href="http://www.frontmedia.co.uk/" target="_blank">Frontmedia</a></p>
+  <?php print render($page['footer']);?>  
 </div>
   </div>
 </div>
