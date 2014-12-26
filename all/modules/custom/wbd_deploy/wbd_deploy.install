@@ -1,0 +1,17 @@
+<?php
+/**
+ * Implements hook_install().
+ *
+ */
+function wbd_deploy_install() {
+  if(function_exists('wbd_deploy_update_1')) {
+      wbd_deploy_update_1();
+  }
+}
+
+/**
+ * @ticketid: Enable javascript aggregation
+ */
+function wbd_deploy_update_1() {
+  module_disable(array('toolbar'));
+}

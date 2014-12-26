@@ -1,0 +1,3 @@
+name = Deploy
+description = This module consists all the Developement changes.
+core = 7.x
